@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加記帳</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form class="my-3">
+                    <h1>記帳本</h1>
+                    <hr>
+                    <div class="my-2">
+                        <label for="thing" class="form-label" id="lblthing">事項</label>
+                        <input type="text"  class="form-control" id="thing" name="thing" aria-describedby="lblthing">
+                    </div>
+                    <div class="my-2">
+                        <label for="time" class="form-label" id="lbltime">發生時間</label>
+                        <input type="date" name="time" id="time" class="form-control" aria-describedby="lbltime">
+                    </div>
+                    <div class="my-2">
+                        <label for="type" class="form-label" id="lbltype">類型</label>
+                        <select name="type" id="type" class="form-select" aria-describedby="lbltype">
+                            <option value="支出">支出</option>
+                            <option value="收入">收入</option>
+                        </select>
+                    </div>
+                    <div class="my-2">
+                        <label for="amount" class="form-label" id="lblamount">金額</label>
+                        <input type="number" min="0" class="form-control" aria-describedby="lblamount">
+                    </div>
+                    <div class="my-2">
+                        <label for="remark" class="form-label" id="lblremark">備註</label>
+                        <textarea name="remark" id="remark" cols="30" rows="10" class="form-control" aria-describedby="lblremark"></textarea>
+                    </div>
+                    <div class="my-2">
+                        <button class="btn btn-primary">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
